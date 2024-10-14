@@ -1,0 +1,66 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+}
+
+body {
+    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana */
+    background-color: rgb(255, 124, 71); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.calculadora {
+    background-color: rgb(242, 219, 161); /* Establece un color de fondo claro para la calculadora */
+    color: rgb(73, 76, 78); 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    width: 350px; 
+    padding: 1rem; 
+    border-radius: 1rem; 
+    gap: 0.5rem; 
+}
+
+.pantalla {
+    grid-column: 1 / 5; /* Hace que la pantalla ocupe las 4 columnas de la cuadrícula */
+    background-color: rgb(255, 255, 255); 
+    padding: 1rem; 
+    font-size: 3rem; 
+    text-align: right; 
+    border-radius: 0.5rem; 
+}
+
+.boton {
+    background-color: rgb(6, 3, 36); /* Establece un color de fondo oscuro para los botones */
+    color: rgb(255, 255, 255); 
+    border: 0;
+    padding: 1rem; 
+    font-size: 1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 0.8rem;
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+}
+
+.boton:hover {
+    background-color: rgb(221, 180, 76); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+#cero {
+    grid-column: span 2; /* Permite que el botón "0" ocupe el espacio de 2 columnas */
+}
+
+#igual {
+    grid-row: span 2; /* Permite que el botón "igual" ocupe el espacio de 2 filas */
+    background-color: rgb(233, 77, 20); /* Establece un color de fondo distintivo para el botón "igual" */
+}
+
+#igual:hover {
+    background-color: rgb(132, 167, 227); /* Cambia el color de fondo del botón "igual" al pasar el cursor sobre él */
+}
+
+
